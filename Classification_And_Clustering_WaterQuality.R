@@ -4,9 +4,9 @@ library(lattice)
 library(factoextra)
 library(class)
 
-setwd("D:/MSc. Business Analysis & Consulting/Course Material/Business Analytics (MS980)/R programming/Lab_Exam_2022")
-DATA <- read.csv("water_exam_2022.csv") 
-set.seed(202259078)    
+setwd("D:\Portfolio\Kaggle Water Quality Project")
+DATA <- read.csv("water_quality.csv") 
+set.seed(05091991)    
 n.sample.omit <- rpois(1, nrow(DATA)/3)  
 n.sample <- nrow(DATA) - n.sample.omit  
 z.sel<- sample(1:nrow(DATA),n.sample,replace=FALSE)  
