@@ -4,7 +4,7 @@ library(lattice)
 library(factoextra)
 library(class)
 
-setwd("D:\Portfolio\Kaggle Water Quality Project")
+setwd("D:/Portfolio/Kaggle Water Quality Project")
 DATA <- read.csv("water_quality.csv") 
 set.seed(05091991)    
 n.sample.omit <- rpois(1, nrow(DATA)/3)  
